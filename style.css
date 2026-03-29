@@ -34,11 +34,18 @@ header {
     top: 70px;
     left: 0;
     width: 100%;
-    background: white;
+    background: var(--background-preto);
 
     display: none;
     flex-direction: column;
     padding: 20px;
+    gap: 5px;
+    border: 1px solid var(--color-primaria);
+}
+
+.menu a {
+    color: var(--color-secundaria);
+    text-decoration: none;
 }
 
 .menu.active {
@@ -223,6 +230,8 @@ header {
 #sobre>div img {
     width: 100px;
 }
+
+/* FOOTER */
 
 footer {
     display: flex;
