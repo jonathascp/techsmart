@@ -1,0 +1,286 @@
+@import url(root.css);
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: var(--font-family);
+}
+
+body {
+    background: var(--background-preto);
+}
+
+/* HEADER */
+header {
+    background: var(--background-preto);
+}
+
+#header_container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 9px 15px;
+}
+
+#header_container>#logo {
+    width: 60px;
+    height: 60px;
+    border: 2px solid var(--color-primaria);
+}
+
+.menu {
+    position: absolute;
+    top: 70px;
+    left: 0;
+    width: 100%;
+    background: white;
+
+    display: none;
+    flex-direction: column;
+    padding: 20px;
+}
+
+.menu.active {
+    display: flex;
+}
+
+.menu-btn {
+    font-size: 28px;
+    background: none;
+    border: none;
+    color: var(--color-primaria);
+}
+
+/* MAIN */
+
+#hero {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 45px;
+}
+
+#hero>div {
+    margin-top: 25px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#hero img {
+    width: 100%;
+}
+
+#hero h1 {
+    width: 380px;
+    text-align: center;
+    margin-top: 25px;
+    font-size: 2.9rem;
+    color: var(--color-secundaria);
+}
+
+#hero p {
+    width: 400px;
+    margin-top: 10px;
+    font-weight: bold;
+    color: #969696;
+    font-size: 1.2rem;
+    text-align: center;
+}
+
+#hero button {
+    border: none;
+    background: var(--color-primaria);
+    color: var(--color-preto);
+    padding: 15px 20px;
+    border-radius: 9px;
+    font-size: 1.3rem;
+    font-weight: bold;
+    margin-top: 22px;
+}
+
+#problemas {
+    margin-top: 64px;
+}
+
+#problemas>h1 {
+    text-align: center;
+    margin-top: 10px;
+    font-weight: bold;
+    color: var(--color-secundaria);
+}
+
+#problemas>p {
+    text-align: center;
+    margin-top: 10px;
+    font-weight: bold;
+    color: #969696;
+    font-size: 1.2rem;
+}
+
+#problemas_container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 21px;
+    margin-top: 21px;
+}
+
+.card {
+    min-width: 190px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 12px;
+    background-color: var(--color-primaria);
+    border-radius: 9px;
+    padding: 12px;
+}
+
+.card>img {
+    width: 65px;
+}
+
+#marcas {
+    margin-top: 65px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#marcas>h1 {
+    text-align: center;
+    margin-top: 10px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: var(--color-secundaria);
+}
+
+#marcas>div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+}
+
+#logo-apple {
+    width: 85px;
+}
+
+#logo-motorola {
+    width: 120px;
+}
+
+#logo-samsung {
+    width: 120px;
+}
+
+#sobre {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 65px;
+}
+
+#sobre>h1 {
+    text-align: center;
+    margin-top: 10px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: var(--color-secundaria);
+}
+
+#sobre>p {
+    width: 380px;
+    font-weight: bold;
+    color: var(--color-secundaria);
+    margin: 9px 0;
+}
+
+#sobre>div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+    margin-top: 25px;
+}
+
+#sobre>div p {
+    font-size: 1.3rem;
+    font-weight: lighter;
+    color: var(--color-secundaria);
+}
+
+#sobre>div img {
+    width: 100px;
+}
+
+footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 65px;
+}
+
+#rodape_titulo {
+    text-align: center;
+    color: var(--color-secundaria);
+}
+
+#rodape_titulo h1 {
+    font-weight: 800;
+    padding-bottom: 12px;
+}
+
+#rodape_contato {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+    color: var(--color-secundaria);
+    margin-top: 12px;
+}
+
+#rodape_contato>h3 {
+    font-weight: bold;
+    font-size: 1.4rem;
+}
+
+#rodape_links {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 12px;
+    gap: 12px;
+    color: var(--color-secundaria);
+}
+
+#rodape_links > div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 27px;
+}
+
+#rodape_links>h3 {
+    font-weight: bold;
+    font-size: 1.4rem;
+}
+
+footer > p {
+    color: var(--color-secundaria);
+    margin-top: 32px;
+    text-align: center;
+}
