@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/main.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
@@ -15,8 +15,8 @@
 
 <body>
     <header>
-        <div id="header_container">
-            <div id="logo"></div>
+        <div class="container header_container">
+            <div class="logo"></div>
             <button class="menu-btn">
                 ☰
             </button>
@@ -30,89 +30,109 @@
         </div>
     </header>
 
-    <main id="home">
-        <section id="hero">
+    <main>
+        <section id="home" class="hero section">
             <img src="imagens/pexels-tdcat-56904.jpg" alt="Hero img">
-            <div>
+            <div class="content">
                 <h1>Manutenção de smartphone com agilidade</h1>
                 <p>Faça seu orçamento com confiança em nossos profissionais.</p>
-                <button> Fazer orçamento no Whatsapp </button>
+                <button class="btn btn_whatsapp"> Fazer orçamento no Whatsapp </button>
             </div>
         </section>
-        <section id="problemas">
-            <h1>Resolvemos seu problema</h1>
-            <p>Agilidade e preparo são o nosso diferencial</p>
-            <div id="problemas_container">
-                <div class="card">
-                    <img src="imagens/telefone-celular.png" alt="celular">
-                    <h3>Tela quebrada</h3>
-                </div>
-                <div class="card">
-                    <img src="imagens/celular.png" alt="celular">
-                    <h3>Bateria ruim</h3>
-                </div>
-                <div class="card">
-                    <img src="imagens/seta-para-baixo.png" alt="celular">
-                    <h3>Sistema lento</h3>
-                </div>
-            </div>
-        </section>
-        <section id="marcas">
-            <h1>Marcas que atendemos</h1>
-            <div>
-                <img src="imagens/apple.png" id="logo-apple" alt="Apple logo">
-                <img src="imagens/motorola.png" id="logo-motorola" alt="Motorola logo">
-                <img src="imagens/samsung.png" id="logo-samsung" alt="Samsung logo">
-            </div>
-        </section>
-        <section id="sobre">
-            <h1>Sobre a Assistência</h1>
-            <p>
-                Somos uma assistência técnica especializada em manutenção de celulares e tablets, oferecendo soluções
-                rápidas, seguras e com garantia.
-            </p>
-            <p>
-                Contamos com profissionais qualificados e utilizamos peças de qualidade para garantir o melhor
-                desempenho do seu aparelho.
-            </p>
 
-            <p>
-                Nosso compromisso é devolver seu celular funcionando perfeitamente, com transparência no diagnóstico e
-                preço justo.
-            </p>
-            <div>
-                <img src="imagens/tools.png" alt="Apple logo">
-                <p>“+500 aparelhos consertados”</p>
-                <img src="imagens/medalha.png" alt="Motorola logo">
-                <p>“Garantia de 90 dias”</p>
-                <img src="imagens/tempo-rapido.png" alt="Samsung logo">
-                <p>“Atendimento rápido”</p>
+        <section id="problemas" class="section">
+            <div class="container">
+                <div class="content">
+                    <h1>Resolvemos seu problema</h1>
+                    <p>Agilidade e preparo são o nosso diferencial</p>
+                    <div class="container_card">
+                        <div class="card">
+                            <img class="icone" src="imagens/telefone-celular.png" alt="celular">
+                            <h3>Tela quebrada</h3>
+                        </div>
+                        <div class="card">
+                            <img class="icone" src="imagens/celular.png" alt="celular">
+                            <h3>Bateria ruim</h3>
+                        </div>
+                        <div class="card">
+                            <img class="icone" src="imagens/seta-para-baixo.png" alt="celular">
+                            <h3>Sistema lento</h3>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="marcas" class="section">
+            <div class="container flex-column">
+                <div class="content">
+                    <h1>Marcas que atendemos</h1>
+                    <div class="container flex-column">
+                        <img src="imagens/apple.png" id="logo-apple" alt="Apple logo">
+                        <img src="imagens/motorola.png" id="logo-motorola" alt="Motorola logo">
+                        <img src="imagens/samsung.png" id="logo-samsung" alt="Samsung logo">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="sobre" class="section">
+            <div class="container flex-column">
+                <h1>Sobre a Assistência</h1>
+                <p>
+                    Somos uma assistência técnica especializada em manutenção de celulares e tablets, oferecendo
+                    soluções
+                    rápidas, seguras e com garantia.
+                </p>
+                <p>
+                    Contamos com profissionais qualificados e utilizamos peças de qualidade para garantir o melhor
+                    desempenho do seu aparelho.
+                </p>
+                <p>
+                    Nosso compromisso é devolver seu celular funcionando perfeitamente, com transparência no diagnóstico
+                    e
+                    preço justo.
+                </p>
+                <div class="content">
+                    <img class="icone" src="imagens/tools.png" alt="Apple logo">
+                    <p>“+500 aparelhos consertados”</p>
+                    <img class="icone" src="imagens/medalha.png" alt="Motorola logo">
+                    <p>“Garantia de 90 dias”</p>
+                    <img class="icone" src="imagens/tempo-rapido.png" alt="Samsung logo">
+                    <p>“Atendimento rápido”</p>
+                </div>
             </div>
 
         </section>
+        
     </main>
 
     <footer>
-        <div id="rodape_titulo">
-            <h1>Tech Smart</h1>
-            <p>Assistência e manutenção de smartphones com profissionalismo e confiança.</p>
+        <section class="section">
+            <div class="container flex-column content">
+                <div >
+                    <h1>Tech Smart</h1>
+                    <p>Assistência e manutenção de smartphones com profissionalismo e confiança.</p>
 
-        </div>
-        <div id="rodape_contato">
-            <h3>Contato</h3>
-                <p>📞 (21) 99999-9999</p>
-                <p>📍 Rio de Janeiro - RJ</p>
-                <p>📧 contato@email.com</p>
-        </div>
-        <div id="rodape_links">
-            <h3>Nossas redes</h3>
-            <div>
-                <p>Instagram</p>
-                <p>Facebook</p>
-                <p>Twitter</p>
+                </div>
+                <div >
+                    <h3>Contato</h3>
+                    <p>📞 (21) 99999-9999</p>
+                    <p>📍 Rio de Janeiro - RJ</p>
+                    <p>📧 contato@email.com</p>
+                </div>
+                <div>
+                    <h3>Nossas redes</h3>
+                    <div class="container">
+                        <p>Instagram</p>
+                        <p>Facebook</p>
+                        <p>Twitter</p>
+                    </div>
+                </div>
+                <p>© 2026 Tech Smart <br> Todos os direitos reservados</p>
             </div>
-        </div>
-        <p>© 2026 Tech Smart <br> Todos os direitos reservados</p>
+        </section>
+
     </footer>
 </body>
 
