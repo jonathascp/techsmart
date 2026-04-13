@@ -2,7 +2,10 @@
     --font-family: "Roboto",sans-serif;
 
     --cor-verde: #01e341;
+    --cor-azul: #00c2ff;
     --cor-branco: #fff;
+
+    --gradiente-verde-azul: linear-gradient(135deg,var(--cor-verde), var(--cor-azul));
 
     --cor-preto: #000000;
 

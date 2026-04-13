@@ -1,17 +1,11 @@
 .section {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    gap: 9px;
-    padding: 25px 15px;
+   padding: 60px 0;
 }
 
 .container {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    gap: 9px;
+   max-width: 1200px;
+   margin: 0 auto;
+   padding: 0 20px;
 }
 
 .flex-column {
@@ -22,11 +16,7 @@
 .container_card {
     display: flex;
     flex-direction: column;
-    gap: 9px;
-}
-
-.card h3{
-    color: var(--cor-preto);
+    gap: 32px;
 }
 
 .content {
@@ -37,6 +27,7 @@
     gap: 9px;
     text-align: center;
     padding: 9px 0;
+    margin: 12px 0;
 }
 
 .header_container {
@@ -44,4 +35,18 @@
     align-items: center;
     justify-content: space-between;
     padding: 7px 9px;
+}
+
+.container-redes {
+    width: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 25px;
+}
+
+hr {
+    margin: 12px 0;
+    border-top: .3px solid ;
+    
 }

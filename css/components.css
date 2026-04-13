@@ -5,14 +5,22 @@
     width: 100%;
     background: var(--cor-preto-fundo-1);
 
-    display: none;
-    flex-direction: column;
     padding: 20px;
     gap: 5px;
     border: 1px solid var(--cor-verde);
 }
 
+.list-menu { 
+    display: flex;
+    flex-direction: column;
+    gap: 9px;
+}
+
+
 .menu a {
+    border-bottom: 1px solid ;    
+    padding: 6px 2px;
+    font-size: 1.2rem;
     color: var(--cor-cinza-normal);
     text-decoration: none;
 }
@@ -21,14 +29,17 @@
     display: flex;
 }
 
+.hero svg {
+    width: 75px;
+   
+}
+
 .hero h1 {
     font-size: 3rem;
 }
 
 .logo {
-    width: 50px;
-    height: 50px;
-    border: 2px solid var(--cor-verde);
+   width: 150px;
 }
 
 .menu-btn {
@@ -49,22 +60,106 @@
 }
 
 .btn_whatsapp {
-    background-color: var(--cor-verde);
+    display: flex;
+    align-items: center;
+    font-size: 1.3rem;
+    background: var(--gradiente-verde-azul);
 
 }
 
 .card {
-    width: 200px;
+    width: 250px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     gap: 12px;
-    background-color: var(--cor-verde);
+    background: var(--gradiente-verde-azul);
     border-radius: 9px;
     padding: 12px;
+    box-shadow: 0px 8px 10px -2px #000000;
+}
+
+.card > p {
+    color: var(--cor-preto-fundo-2);
+    font-weight: 500;
+}
+
+.card h3{
+    color: var(--cor-preto);
+    font-size: 1.5rem;
 }
 
 .icone {
     width: 65px;
+}
+
+.logo-card {
+    width: 250px;
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 9px;
+    margin: 12px 0;
+    background: linear-gradient(90deg, var(--cor-verde), var(--cor-azul));
+}
+
+.logo-background {
+
+    --cor-preto-1: #141A19;
+    --cor-preto-2: #080C10;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 248px;
+    height: 148px;
+    border-radius: 9px;
+    background: linear-gradient(180deg,var(--cor-preto-1),var(--cor-preto-2));
+}
+
+.logo-icon {
+    width: 110px;
+    filter: grayscale(100%) contrast(120%) brightness(110%);
+}
+
+.cor-texto-primaria {
+    color: var(--cor-verde);
+}
+
+.cor-texto-secundaria {
+    color: var(--cor-azul);
+}
+
+.card-sobre {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 12px 0;
+}
+
+.card-sobre > p:nth-of-type(1) {
+    font-size: 2.1rem;
+}
+
+.card-sobre > p:nth-of-type(2) {
+    font-size: 1.7rem;
+}
+
+.svg-redes {
+    fill: var(--cor-cinza-normal);
+}
+
+.svg-star {
+    fill: var(--cor-verde);
+}
+
+.svg-medal {
+    fill: var(--cor-azul);
+}
+
+.svg-clock {
+    fill: var(--cor-verde);
 }
