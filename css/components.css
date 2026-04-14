@@ -17,11 +17,11 @@
 }
 
 .logo {
-   width: 300px;
+   width: 75px;
 }
 
 .menu-btn {
-    font-size: 76px;
+    font-size: 50px;
     background: none;
     border: none;
     color: var(--cor-verde);

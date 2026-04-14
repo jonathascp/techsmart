@@ -1,4 +1,5 @@
 body {
+    width: 100vw;
     background: var(--cor-preto-fundo-1);
     font-family: var(--font-family);
     display: flex;
