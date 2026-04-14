@@ -1,6 +1,10 @@
 body {
     background: var(--cor-preto-fundo-1);
     font-family: var(--font-family);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 
 h1,h2,h3 {
