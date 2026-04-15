@@ -4,4 +4,11 @@
     margin: 0;
     font-family: var(--font-family);
     list-style: none;
+    max-width: 100%;
+}
+
+html {
+    width: 100%;
+    max-width: 100%;
+    overflow-x: hidden;
 }
