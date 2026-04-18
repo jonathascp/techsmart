@@ -17,7 +17,13 @@
 }
 
 .logo {
-   width: 158px;
+   width: 138px;
+}
+
+@media (min-width: 1024px ) {
+    .logo {
+        width: 300px;
+    }
 }
 
 .menu-btn {
@@ -173,4 +179,10 @@
 .rodape-final {
     text-align: center;
     margin: 24px 0;
+}
+
+@media (min-width: 1024px ) {
+    .rodape-final > br {
+        display: none;
+    }
 }

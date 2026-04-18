@@ -8,8 +8,12 @@
     padding: 0 20px;
 }
 
-header {
+main,header {
     width: 100%;
+}
+
+header {
+    background: var(--cor-preto);
 }
 
 .header_container {
@@ -17,7 +21,7 @@ header {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 7px 9px;
+    padding: 36px 56px;
 }
 
 
@@ -26,6 +30,12 @@ header {
     display: flex;
     flex-direction: column;
     align-items: center;
+}
+
+@media (min-width: 1024px ) {
+    .hero > img {
+        width: 680px;
+    }   
 }
 
 
@@ -43,20 +53,58 @@ header {
 
 .hero-texto>p {
     text-align: center;
-    font-size: 1rem;
+    font-size: 1.6rem;
 }
 
 .problemas-container {
+    width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
+@media (min-width: 1024px ) {
+    .problemas-container > p {
+        font-size: 1.6rem;
+    }
+}
+
+.logo-marcas-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 38px;
+}
+
+@media (min-width: 1024px ) {
+    .logo-marcas-container {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 100px;
+    }    
+}
+
+@media (min-width: 1024px ) {
+    .card-sobre-container {
+        display: flex;
+        align-items: center;
+        gap: 100px;
+    }
+}
+
 .container_card {
     display: flex;
     flex-direction: column;
-    gap: 32px;
+    gap: 38px;
     margin: 32px 0;
+}
+
+@media (min-width: 1024px) {
+    .container_card {
+        flex-direction: row;
+        gap: 100px;
+    }
 }
 
 .marcas-container {
@@ -95,6 +143,7 @@ header {
     text-align: center;
 }
 
+
 .contato {
     display: flex;
     flex-direction: column;
@@ -110,4 +159,36 @@ header {
 
 .secao-problemas, .secao-sobre {
     background-color: var(--cor-preto-fundo-2);
+}
+
+.nav-lista {
+    display: none;
+}
+
+.nav-lista > ul {
+    display: flex;
+    align-items: center;
+    gap: 52px;
+}
+
+.nav-lista > ul a {
+    padding: 6px 2px;
+    font-size: 1.7rem;
+    color: var(--cor-cinza-normal);
+}
+
+@media (min-width: 1024px ) {
+    .nav-lista {
+        display: block;
+    }
+}
+
+.nav-hamburguer {
+    display: block;
+}
+
+@media( min-width: 1024px) {
+    .nav-hamburguer {
+        display: none;
+    }
 }
