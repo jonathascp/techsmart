@@ -91,7 +91,7 @@ header {
     gap: 12px;
 }
 
-.rodape_titulo > p {
+.rodape_titulo > div > p {
     text-align: center;
 }
 
@@ -106,4 +106,8 @@ header {
 .contato > h3 {
     font-size: 1.7rem;
     color: var(--cor-cinza-claro);
+}
+
+.secao-problemas, .secao-sobre {
+    background-color: var(--cor-preto-fundo-2);
 }
